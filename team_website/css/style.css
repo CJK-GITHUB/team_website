@@ -1,0 +1,538 @@
+
+@viewport {
+	zoom: 1.0;
+	width: extend-to-zoom;
+}
+@-ms-viewport {
+	zoom: 1.0;
+	width: extend-to-zoom;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* restore list styling */
+li ul, li ol {
+margin:0 1.5em;
+}
+ul, ol {
+margin:0 1.5em 1.5em 1.5em;
+}
+ul {
+list-style-type:disc;
+}
+ol {
+list-style-type:decimal;
+}
+ol ol {
+list-style: upper-alpha;
+}
+ol ol ol {
+list-style: lower-roman;
+}
+ol ol ol ol {
+list-style: lower-alpha;
+}
+
+strong {
+	font-weight:700;
+}
+em {
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CUSTOM STYLES */
+/*
+font-family: 'Zeyada', cursive;
+font-family: 'Abel', sans-serif;
+font-family: 'Crimson Text', serif;
+*/
+/*---------------*/
+/*CONTSTRUCT TAGS*/
+/*---------------*/
+
+html {
+	font-family: 'Crimson Text', serif;
+	font-size: 1.2em;
+	background-color: #121c41;
+}
+
+body {
+	background-color: #fff;
+	padding: .5rem;
+}
+
+header {
+	background-image: url("../img/typing.jpg");
+	background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.dkBlueBar{
+	background-color:#121c41;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	text-align: right;
+	margin: 2% 0 2% 5%;
+	padding: 1%;
+}
+nav{
+	text-align: justify;
+}
+nav a{
+	text-decoration: none;
+}
+
+h1 {
+}
+
+h2 {
+	margin-bottom: .25rem;
+	font-size: 1.2rem;
+	font-family: 'Muli', sans-serif;
+}
+
+h3 {
+	margin-bottom: .25rem;
+	font-size: 1.1rem;
+	font-family: 'Muli', sans-serif;
+}
+
+img {
+}
+
+p {
+	font-family: 'Muli', sans-serif;
+	font-size: .9rem;
+	line-height: 1.05rem;
+}
+/* changed a font to abel for more modern clean look */
+a {
+	font-family: 'Abel', sans-serif;
+}
+
+label {
+	font-family: 'Abel', sans-serif;
+}
+/*---------------------*/
+/*NAV AND HEADER STYLES*/
+/*---------------------*/
+
+#logo_fig {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5c8cf+0,7db9e8+100&1+0,0+100 */
+background: -moz-linear-gradient(left, rgba(181,200,207,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(181,200,207,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(181,200,207,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5c8cf', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+	/*background-color: rgba(181, 200, 207, 0.77);*/
+	display: block;
+}
+
+#logo_img {
+	width: 50%;
+}
+
+
+.dkBlueBar a{
+	/*padding: 1%;*/
+	color: #e2f4ef;
+	border-right: 2px solid #cff0d9;
+	text-align: center;
+	margin: 1% auto ;
+	flex:1;
+
+}
+
+.dkBlueBar a:nth-child(4){
+	border-right: none;
+}
+
+
+.anchor-link, .moblie-btn{
+	float: right;
+	background-color: #121c41;
+	padding: 1rem 2rem;
+	margin: .25rem;
+	text-decoration: none;
+	color: #f1e7e7
+}
+
+#home_content{
+	clear: both;
+}
+.dkBlueBar{
+	display:none;
+}
+
+.dkBlueBar-mobile{
+
+}
+#mobile-nav{
+	display: flex;
+	flex-flow: column;
+	background-color:#121c41;
+	text-align: center;
+	margin: 2% 0 2% 0;
+}
+.nav_link-mob{
+	border: 1px solid #ffffff ;
+	color: #ecebf4;
+	font-size: 1.2em;
+	padding: 1.9%;
+}
+
+
+@media screen and (min-width: 760px){
+	.dkBlueBar-mobile{
+		display: none;
+	}
+.dkBlueBar{
+	display: block;
+}
+.anchor-link{
+	display: none;
+}
+
+}
+/*------------*/
+/*INDEX STYLES*/
+/*------------*/
+
+
+
+#home_team_fig {
+	flex: 1;
+}
+#home_team_img2{
+	display: none;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.home_para {
+	margin-top: .15rem;
+}
+.home_info2 {
+	margin: .25rem 0 .5rem 0;
+}
+.home_info3 {
+	margin-bottom: .25rem;
+}
+#home_team_img{
+	width: 90%;
+	display: block;
+	margin: 2% auto 2% auto;
+}
+.home_info, #home_team_fig, .home_info2,  .home_info3{
+	margin: 0 5% 3% 5%;
+}
+#fname_input {
+	margin-left: .3rem;
+}
+#lname_input {
+	margin-left: .35rem;
+}
+#site_input {
+	margin-left: .5rem;
+}
+#email_input {
+	margin-left: 2.65rem;
+}
+.tagline {
+	font-size: 1.2rem;
+}
+.dkBlueBar   nav{
+	display: flex;
+}
+
+@media screen and (min-width: 960px){
+	#home_content {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+#home_team_img{
+	width: 100%;
+}
+#home_team_img2{
+	display: block;
+	margin: 0 1rem 0 0;
+}
+}
+/*-----------*/
+/*TEAM STYLES*/
+/*-----------*/
+
+
+
+#team_intro {
+	margin: 3rem 3rem 0rem 3rem;
+}
+
+.team_box {
+	flex: 1;
+	padding: 2rem 2rem 2rem 2rem;
+	margin: 2rem 2rem 2rem 2rem;
+	/*border: 1px solid #ccc;*/
+	border-radius: 20px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+	background-color: rgba(237, 237, 229, 0.63);
+}
+
+.team_member_fig {
+	margin-bottom: 1rem;
+
+}
+
+.team_member_img {
+	width: 100%;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px #2e2e2e;
+}
+
+.team_h3 {
+	font-family: 'Muli', sans-serif;
+	font-size: 1.4rem;
+	margin: .5rem 0 .5rem 0;
+	text-align: center;
+}
+.team_content {
+	display: flex;
+	flex-flow: column;
+}
+@media screen and (min-width: 760px){
+
+	.team_member_img {
+		width: 80%;
+	}
+	.team_member_fig {
+		text-align: center;
+	}
+	.team_content {
+		display: flex;
+		flex-flow: row wrap;
+	}
+}
+/*--------------*/
+/*GALLERY STYLES*/
+/*--------------*/
+
+
+
+.gallery_box {
+	flex: 1;
+	padding: 2rem 2rem 2rem 2rem;
+	margin: 2rem 2rem 2rem 2rem;
+	/*border: 1px solid #ccc;*/
+	border-radius: 20px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+	background-color: rgba(237, 237, 229, 0.63);
+}
+
+#gallery_intro {
+	margin: 3rem 3rem 0rem 3rem;
+}
+
+.gallery_img_fig {
+	margin-bottom: 1rem;
+}
+
+.gallery_img {
+	width: 100%;
+}
+
+.gallery_h3 {
+	font-family: 'Muli', sans-serif;
+	font-size: 1.4rem;
+	margin-bottom: .5rem;
+}
+.gallery_content {
+	display: flex;
+	flex-flow: column;
+}
+
+@media screen and (min-width: 760px){
+	.gallery_content {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.gallery_img {
+		width: 80%;
+	}
+	.gallery_img_fig {
+		text-align: center;
+	}
+}
+
+/*-------------*/
+/*FOOTER STYLES*/
+/*-------------*/
+
+#contact_us {
+	background-color: #cad7df;
+	text-align: center;
+}
+.tagline {
+	flex: 1;
+	border-right: solid 2px #000;
+	margin-top: 1.75rem;
+	padding: 1rem;
+	font-size: 1.5rem;
+	font-family: 'Abel', sans-serif;
+}
+.call_to_action {
+	width: 50%;
+}
+#footer_content {
+	padding: 1rem;
+	flex: 1;
+}
+.footer_headline {
+	margin-bottom: .5rem;
+}
+.input_box1 {
+	margin-bottom: .25rem;
+}
+.input_box2 {
+	margin-bottom: .25rem;
+}
+.input_box3 {
+	margin-bottom: .25rem;
+}
+.input_box4 {
+	margin-bottom: .25rem;
+}
+.btn{
+	margin-left: 16%;
+}
+#contact_us {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+@media screen and (min-width: 960px){
+
+ html{
+	 padding: 0 2%;
+	 background-image: url(../img/leaves.jpg);
+	 background-repeat: repeat;
+	 background-attachment: fixed;
+	 width: 80%;
+	 margin: 0 auto;
+	 font-size: 1.5em;
+ }
+ #logo_img {
+ 	width: 50%;
+ }
+ .flex_contain{
+	 display: flex;
+	 flex-flow: row nowrap;
+ }
+ .home_info, .home_team_fig{
+	 flex:1;
+ }
+
+ .home_info2,  .home_info3{
+	 flex: 1;
+ }
+}
+.email{
+	background-color: #121c41;
+	color: #e9f4ed;
+	padding: 1%;
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+
+/*ANIMATIONS*/
+
+.team_member_img, .gallery_img {
+	transform: scale(1, 1);
+	transition: transform .2s linear 0s;
+	/*border:#000 solid 1px;*/
+	transition: border .6s ease-in-out 0s;
+}
+.team_member_img:hover, .gallery_img:hover{
+	/*transform: scale(1.05, 1.05);*/
+	border:#0a0c3c solid 5px;
+}
+
+.nav_link-mob, .anchor-link {
+transition: background-color .5s linear 0s, font-size .2s linear 0s;
+}
+.nav_link-mob:hover, .anchor-link:hover {
+background-color:#0b3b25;
+font-size: 170%;
+}
+
+.nav_link{
+	transition:
+	color .5s ease-in-out .1s,
+	font-size .5s linear 0s,
+	text-shadow .2s ease-in 0s;
+}
+
+.nav_link:hover{
+color: #85c3da;
+font-size: 130%;
+text-shadow: 0 1px 1px #7b94b9;
+/*margin: 0 4% 0 4%;*/
+}
